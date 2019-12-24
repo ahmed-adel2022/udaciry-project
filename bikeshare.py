@@ -2,14 +2,14 @@ import time
 import pandas as pd
 import numpy as np
 
-CITY_DATA = { 'chicago': 'chicago.csv',
+CITY_DATA_files = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
 def get_filters():
 
     print('Hello! Let\'s investigate some US bikeshare data!')
-    # Get input from users for city (chicago, new york city, washington). 
+    # Get input from users for city (chicago, new york city, washington).
     print('Please, Enter the name of the city you want to explore')
     print('The data available is for the cities of Chicago, New York city and Washington \nSo choose one of them, please:')
 
@@ -50,7 +50,7 @@ def get_filters():
 def load_data(city, month, day):
 
     # load data file into a dataframe
-    df = pd.read_csv(CITY_DATA[city])
+    df = pd.read_csv(CITY_DATA_files[city])
 
     # convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
@@ -104,7 +104,7 @@ dimport time
 import pandas as pd
 import numpy as np
 
-CITY_DATA = { 'chicago': 'chicago.csv',
+CITY_DATA_files = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
@@ -152,7 +152,7 @@ def get_filters():
 def load_data(city, month, day):
 
     # load data file into a dataframe
-    df = pd.read_csv(CITY_DATA[city])
+    df = pd.read_csv(CITY_DATA_files[city])
 
     # convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
