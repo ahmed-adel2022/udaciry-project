@@ -5,10 +5,10 @@
 Udacity third Project
 
 ### Description
-This project is required to pass the third project in the Udacity nanodegree
+This project is required to pass the third project in the Udacity nanodegree program
 
 ### Files used
 bikeshare.py, New-York.csv, Washington.csv and Chicago.csv
 
 ### Credits
-The project is based on codes provided by Udacity and modified by me. 
+The project is based on codes provided by Udacity and modified by me.
